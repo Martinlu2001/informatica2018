@@ -1,4 +1,4 @@
-!function (e) {
+!function (e) {//no tocar esta funcion
     function __webpack_require__(a) {
         if (t[a])
             return t[a].exports;
@@ -41,7 +41,8 @@
         __webpack_require__.p = "",
         __webpack_require__(__webpack_require__.s = 2)
 }
-([  function (e, t, a) {
+
+([  function (e, t, a) {//1 inicializa los creditos de las escuelas con 0
         "use strict";
         function Escuela() { }
         Object.defineProperty(t, "__esModule", {
@@ -56,17 +57,17 @@
         Escuela.prototype.nCredCs = 0,
         Escuela.prototype.nCredEst = 0
     }
-    , function (e, t, a) {
+    , function (e, t, a) {//2 se muestran los creditos totales en el cuadro
         "use strict";
         function actualizarPanelResultados() {
             document.getElementById("num-cred-inf").innerHTML = s.default.prototype.nCredInf,
-            document.getElementById("num-cred-cp").innerHTML = s.default.prototype.nCredCp,
-            document.getElementById("num-cred-mat").innerHTML = s.default.prototype.nCredMat,
-            document.getElementById("num-cred-fis").innerHTML = s.default.prototype.nCredFis,
-            document.getElementById("num-cred-lyl").innerHTML = s.default.prototype.nCredLyl,
-            document.getElementById("num-cred-cs").innerHTML = s.default.prototype.nCredCs,
-            document.getElementById("num-cred-est").innerHTML = s.default.prototype.nCredEst,
-            document.getElementById("num-cred-tot").innerHTML = s.default.prototype.nCredInf + s.default.prototype.nCredCp + s.default.prototype.nCredMat + s.default.prototype.nCredFis + s.default.prototype.nCredLyl + s.default.prototype.nCredCs + s.default.prototype.nCredEst
+            document.getElementById("num-cred-inf").innerHTML = s.default.prototype.nCredCp,
+            document.getElementById("num-cred-inf").innerHTML = s.default.prototype.nCredMat,
+            document.getElementById("num-cred-inf").innerHTML = s.default.prototype.nCredFis,
+            document.getElementById("num-cred-inf").innerHTML = s.default.prototype.nCredLyl,
+            document.getElementById("num-cred-inf").innerHTML = s.default.prototype.nCredCs,
+            document.getElementById("num-cred-inf").innerHTML = s.default.prototype.nCredEst,
+            document.getElementById("num-cred-inf").innerHTML = s.default.prototype.nCredInf + s.default.prototype.nCredCp + s.default.prototype.nCredMat + s.default.prototype.nCredFis + s.default.prototype.nCredLyl + s.default.prototype.nCredCs + s.default.prototype.nCredEst
         }
         Object.defineProperty(t, "__esModule", {
             value: !0
@@ -79,7 +80,7 @@
                 }
             }(i)
     }
-    , function (e, t, a) {
+    , function (e, t, a) {//3 captura los botones para marcar todo o desmarcar los cursos
         "use strict";
         function _interopRequireDefault(e) {
             return e && e.__esModule ? e : {
@@ -119,80 +120,72 @@
                         f.default)()
             }
     }
-    , function (e, t, a) {
+    , function (e, t, a) {//4 array con los atributos de los cursos
         "use strict";
         function cargarDatos() {
             var e = [];
             /*funcion(ciclo, codigoCurso, n, nombreCurso, creditos, horas teoricas, horas pract, horas lab, escuela, requisitos)*/
-            /*Cursos Primer ciclo*/
             return e.push(new s.default(1, 13024, 1, "Desarrollo Personal", 3, 2, 2, 0, "Ciencias Psicologicas", 0, 0, 0, 0)),
-                e.push(new s.default(1, 13029, 1, "Lectura Critica y Redaccion de Textos Academicos", 3, 2, 2, 0, "Lengua y Literatura", 0, 0, 0, 0)),
-                e.push(new s.default(1, 13027, 1, "Fisica General", 4, 2, 4, 0, "Fisica", 0, 0, 0, 0)),
-                e.push(new s.default(1, 13021, 1, "Algoritmos y Programacion", 4, 2, 2, 2, "Informatica", 0, 0, 0, 0)),
-                e.push(new s.default(1, 13023, 1, "Desarrollo del Pensamiento Logico Matematico", 4, 1, 4, 0, "Matematica", 0, 0, 0, 0)),
-                e.push(new s.default(1, 13028, 1, "Introduccion al Analisis Matematico", 4, 2, 4, 0, "Matematica", 0, 0, 0, 0)),
-                e.push(new s.default(1, 13031, 1, "Taller de Liderazgo y Trabajo en equipo", 1, 0, 2, 0, "Ciencias Sociales", 0, 0, 0, 0)),
-                /*Cursos Segundo ciclo*/
-                e.push(new s.default(2, 13040, 2, "Etica, Convivencia Humana y Ciudadania", 3, 2, 2, 0, "Ciencias Sociales", 0, 0, 0, 0)),
-                e.push(new s.default(2, 13043, 2, "Sociedad, Cultura y Ecologia", 3, 1, 4, 2, "Ciencias Sociales", 0, 0, 0, 0)),
-                e.push(new s.default(2, 13036, 2, "Cultura Investigativa y Pensamiento Critico", 3, 2, 2, 0, "Ciencias Sociales", 0, 0, 0, 0)),
+                e.push(new s.default(1, 13029, 1, "Lectura Crítica y Redacción de Textos Académicos", 3, 2, 2, 0, "Lengua y Literatura", 0, 0, 0, 0)),
+                e.push(new s.default(1, 13027, 1, "Física General", 4, 2, 4, 0, "Fisica", 0, 0, 0, 0)),
+                e.push(new s.default(1, 13021, 1, "Algoritmos y Programación", 4, 2, 2, 2, "Informatica", 0, 0, 0, 0)),
+                e.push(new s.default(1, 13023, 1, "Desarrollo del Pensamiento Lógico Matemático", 4, 1, 4, 0, "Matematica", 0, 0, 0, 0)),
+                e.push(new s.default(1, 13028, 1, "Introducción al Análisis Matemático", 4, 2, 4, 0, "Matematica", 0, 0, 0, 0)),
+                e.push(new s.default(1, 13031, 1, "Taller de Liderazgo y Trabajo en equipo", 1, 0, 2, 0, "Ciencias Sociales", 0, 0, 0, 0)),                
+                e.push(new s.default(2, 13040, 2, "Ética, Convivencia Humana y Ciudadanía", 3, 2, 2, 0, "Ciencias Sociales", 0, 0, 0, 0)),
+                e.push(new s.default(2, 13043, 2, "Sociedad, Cultura y Ecología", 3, 1, 4, 2, "Ciencias Sociales", 0, 0, 0, 0)),
+                e.push(new s.default(2, 13036, 2, "Cultura Investigativa y Pensamiento Crítico", 3, 2, 2, 0, "Ciencias Sociales", 0, 0, 0, 0)),
                 e.push(new s.default(2, 13039, 2, "Estructura de Datos", 4, 2, 2, 2, "Informatica", 13021, 0, 0, 0)),
-                e.push(new s.default(2, 13038, 2, "Estadistica General", 4, 2, 4, 0, "Estadistica", 0, 0, 0, 0)),
-                e.push(new s.default(2, 13034, 2, "Analisis Matematico", 4, 2, 4, 0, "Matematica", 13028, 0, 0, 0)),
-                e.push(new s.default(2, 13046, 2, "Taller de Manejo de TIC", 1, 0, 2, 0, "Informatica", 0, 0, 0, 0)),
-                /*Cursos Tercer ciclo*/       
-                e.push(new s.default(3, 13629, 1, "Geometria Analitica", 4, 2, 4, 0, "Matematica", 13034, 0, 0, 0)),
-                e.push(new s.default(3, 13630, 1, "Paradigmas de Lenguajes de Programacion", 4, 2, 2, 2, "Informatica", 0, 0, 0, 0)),
-                e.push(new s.default(3, 13631, 1, "Estrategias Algoritmicas", 4, 2, 2, 2, "Informatica", 13039, 0, 0, 0)),
-                e.push(new s.default(3, 13632, 1, "Matematica Discreta", 3, 2, 4, 0, "Matematica", 0, 0, 0, 0)),
-                e.push(new s.default(3, 13633, 1, "Física para Ciencia de la Computacion", 3, 2, 0, 2, "Fisica", 13027, 0, 0, 0)),
-                e.push(new s.default(3, 13634, 1, "Analisis Numerico", 3, 2, 0, 2, "Matematica", 13034, 0, 0, 0)),
-                /*Cursos Cuarto ciclo*/               
-                e.push(new s.default(4, 13635, 2, "Computacion Grafica", 4, 2, 2, 2, "Informatica", 13629, 13039, 0, 0)),
-                e.push(new s.default(4, 13636, 2, "Organizacion de Archivos", 3, 2, 0, 2, "Informatica", 13039, 0, 0, 0)),
+                e.push(new s.default(2, 13038, 2, "Estadística General", 4, 2, 4, 0, "Estadistica", 0, 0, 0, 0)),
+                e.push(new s.default(2, 13034, 2, "Análisis Matemático", 4, 2, 4, 0, "Matematica", 13028, 0, 0, 0)),
+                e.push(new s.default(2, 13046, 2, "Taller de Manejo de TIC", 1, 0, 2, 0, "Informatica", 0, 0, 0, 0)),                      
+                e.push(new s.default(3, 13629, 1, "Geometría Analítica", 4, 2, 4, 0, "Matematica", 13034, 0, 0, 0)),
+                e.push(new s.default(3, 13630, 1, "Paradigmas de Lenguajes de Programación", 4, 2, 2, 2, "Informatica", 0, 0, 0, 0)),
+                e.push(new s.default(3, 13631, 1, "Estrategias Algorítmicas", 4, 2, 2, 2, "Informatica", 13039, 0, 0, 0)),
+                e.push(new s.default(3, 13632, 1, "Matemática Discreta", 3, 2, 4, 0, "Matematica", 0, 0, 0, 0)),
+                e.push(new s.default(3, 13633, 1, "Física para Ciencia de la Computación", 3, 2, 0, 2, "Fisica", 13027, 0, 0, 0)),
+                e.push(new s.default(3, 13634, 1, "Análisis Numérico", 3, 2, 0, 2, "Matematica", 13034, 0, 0, 0)),                             
+                e.push(new s.default(4, 13635, 2, "Computación Gráfica", 4, 2, 2, 2, "Informatica", 13629, 13039, 0, 0)),
+                e.push(new s.default(4, 13636, 2, "Organización de Archivos", 3, 2, 0, 2, "Informatica", 13039, 0, 0, 0)),
                 e.push(new s.default(4, 13637, 2, "Algoritmos y Complejidad", 4, 2, 2, 2, "Informatica", 13631, 13632, 0, 0)),
-                e.push(new s.default(4, 13638, 2, "Lenguajes Formales y Automatas", 4, 2, 2, 2, "Informatica", 13632, 0, 0, 0)),
-                e.push(new s.default(4, 13639, 2, "Electronica para Computación", 4, 2, 2, 2, "Informatica", 13633, 0, 0, 0)),
-                e.push(new s.default(4, 13640, 2, "Innovacion y Emprendimiento", 3, 2, 2, 0, "Informatica", 0, 0, 0, 0)),
-                /*Cursos Quinto ciclo*/                
+                e.push(new s.default(4, 13638, 2, "Lenguajes Formales y Autómatas", 4, 2, 2, 2, "Informatica", 13632, 0, 0, 0)),
+                e.push(new s.default(4, 13639, 2, "Electrónica para Computación", 4, 2, 2, 2, "Informatica", 13633, 0, 0, 0)),
+                e.push(new s.default(4, 13640, 2, "Innovación y Emprendimiento", 3, 2, 2, 0, "Informatica", 0, 0, 0, 0)),                              
                 e.push(new s.default(5, 13641, 1, "Base de Datos I", 4, 2, 2, 2, "Informatica", 13636, 0, 0, 0)),
-                e.push(new s.default(5, 13642, 1, "Ingenieria de Software I", 4, 2, 2, 2, "Informatica", 13630, 0, 0, 0)),
+                e.push(new s.default(5, 13642, 1, "Ingeniería de Software I", 4, 2, 2, 2, "Informatica", 13630, 0, 0, 0)),
                 e.push(new s.default(5, 13643, 1, "Inteligencia Artificial I", 4, 2, 2, 2, "Informatica", 13637, 0, 0, 0)),
                 e.push(new s.default(5, 13644, 1, "Compiladores", 4, 2, 2, 2, "Informatica", 13638, 0, 0, 0)),
-                e.push(new s.default(5, 13645, 1, "Tecnicas Digitales para Computacion", 4, 2, 2, 2, "Informatica", 13639, 0, 0, 0)),
-                e.push(new s.default(5, 13646, 1, "Metodologia de la Investigacion Cientifica", 2, 2, 0, 0, "Informatica", 0, 0, 0, 0)),
-                /*Cursos Sexto ciclo*/               
-                e.push(new s.default(6, 14068, 2, "Computacion Grafica Avanzada", 4, 2, 2, 2, "Informatica", 13635, 0, 0, 0)),
+                e.push(new s.default(5, 13645, 1, "Técnicas Digitales para Computación", 4, 2, 2, 2, "Informatica", 13639, 0, 0, 0)),
+                e.push(new s.default(5, 13646, 1, "Metodología de la Investigación Científica", 2, 2, 0, 0, "Informatica", 0, 0, 0, 0)),                          
+                e.push(new s.default(6, 14068, 2, "Computación Gráfica Avanzada", 4, 2, 2, 2, "Informatica", 13635, 0, 0, 0)),
                 e.push(new s.default(6, 14069, 2, "Base de Datos II", 4, 2, 2, 2, "Informatica", 13641, 0, 0, 0)),
                 e.push(new s.default(6, 14070, 2, "Ingeniería de Software II", 4, 2, 2, 2, "Informatica", 13642, 0, 0, 0)),
                 e.push(new s.default(6, 14071, 2, "Inteligencia Artificial II", 2, 0, 2, 2, "Informatica", 13643, 0, 0, 0)),
-                e.push(new s.default(6, 14072, 2, "Comunicacion de Datos", 4, 2, 2, 2, "Informatica", 13645, 0, 0, 0)),
-                e.push(new s.default(6, 14073, 2, "Arquitectura y Organizacion de Computadoras", 4, 2, 2, 2, "Informatica", 13645, 0, 0, 0)),
-                /*Cursos Setimo ciclo*/                
+                e.push(new s.default(6, 14072, 2, "Comunicación de Datos", 4, 2, 2, 2, "Informatica", 13645, 0, 0, 0)),
+                e.push(new s.default(6, 14073, 2, "Arquitectura y Organización de Computadoras", 4, 2, 2, 2, "Informatica", 13645, 0, 0, 0)),                              
                 e.push(new s.default(7, 14074, 1, "Base de Datos Avanzada", 4, 2, 2, 2, "Informatica", 14069, 0, 0, 0)),
                 e.push(new s.default(7, 14075, 1, "Desarrollo de Software", 4, 2, 2, 2, "Informatica", 14070, 0, 0, 0)),
-                e.push(new s.default(7, 14076, 1, "Percepcion y Vision por Computadora", 4, 2, 2, 2, "Informatica", 14071, 0, 0, 0)),
+                e.push(new s.default(7, 14076, 1, "Percepción y Visión por Computadora", 4, 2, 2, 2, "Informatica", 14071, 0, 0, 0)),
                 e.push(new s.default(7, 14077, 1, "Redes de Computadoras I", 4, 2, 2, 2, "Informatica", 14072, 0, 0, 0)),
                 e.push(new s.default(7, 14078, 1, "Sistemas Operativos I", 4, 2, 2, 2, "Informatica", 14073, 0, 0, 0)),
-                e.push(new s.default(7, 14079, 1, "Gestion de Proyectos Informaticos", 2, 0, 2, 2, "Informatica", 14070, 0, 0, 0)),
-                /*Cursos Octavo ciclo*/                
-                e.push(new s.default(8, 14080, 2, "Robotica", 4, 2, 2, 2, "Informatica", 14071, 0, 0, 0)),
+                e.push(new s.default(7, 14079, 1, "Gestión de Proyectos Informáticos", 2, 0, 2, 2, "Informatica", 14070, 0, 0, 0)),                             
+                e.push(new s.default(8, 14080, 2, "Robótica", 4, 2, 2, 2, "Informatica", 14071, 0, 0, 0)),
                 e.push(new s.default(8, 14081, 2, "Redes de Computadoras II", 4, 2, 2, 2, "Informatica", 14077, 0, 0, 0)),
-                e.push(new s.default(8, 14082, 2, "Sistemas Operativos II", 4, 2, 2, 2, "Informatica", 14078, 0, 0, 0)),
-                
-                e.push(new s.default(8, 14083, 2, "Practicas Pre-Profesionales", 10, 1, 9, 9, "Informatica", 1, 0, 0, 0)),
-                /*Cursos Noveno ciclo*/               
-                e.push(new s.default(9, 14084, 1, "Interaccion Humano Computador", 4, 2, 2, 2, "Informatica", 14070, 0, 0, 0)),
+                e.push(new s.default(8, 14082, 2, "Sistemas Operativos II", 4, 2, 2, 2, "Informatica", 14078, 0, 0, 0)),               
+                e.push(new s.default(8, 14083, 2, "Prácticas Pre-Profesionales", 10, 1, 9, 9, "Informatica", 13024, 13029, 13027, 13021, 13023, 13028, 13031, 13040, 13043, 13036, 13039, 13038, 13034, 13046, 13629, 13630, 13631, 13632, 13633,
+                    13634, 13635, 13636, 13637, 13638, 13639, 13640, 13641, 13642, 13643, 13644, 13645, 13646, 14068, 14069, 14070, 14071, 14072, 14073, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+                )),//                             
+                e.push(new s.default(9, 14084, 1, "Interacción Humano Computador", 4, 2, 2, 2, "Informatica", 14070, 0, 0, 0)),
                 e.push(new s.default(9, 14085, 1, "Tópicos en Base de Datos", 4, 2, 2, 2, "Informatica", 14069, 0, 0, 0)),
-                e.push(new s.default(9, 14086, 1, "Topicos en Ing. de Sotware", 4, 2, 2, 2, "Informatica", 14070, 0, 0, 0)),
+                e.push(new s.default(9, 14086, 1, "Tópicos en Ing. de Sotware", 4, 2, 2, 2, "Informatica", 14070, 0, 0, 0)),
                 e.push(new s.default(9, 14087, 1, "Ing. de Software Avanzada", 4, 2, 2, 2, "Informatica", 14070, 0, 0, 0)),
-                e.push(new s.default(9, 14088, 1, "Seguridad Informatica", 4, 2, 2, 2, "Informatica", 14081, 0, 0, 0)),
-                
-                e.push(new s.default(9, 14089, 1, "Proyecto de Tesis", 2, 1, 2, 0, "Informatica", 1, 0, 0, 0)),
-                /*Cursos Decimo ciclo*/               
-                e.push(new s.default(10, 14090, 2, "Topicos en Tecnologias Inmersivas", 4, 2, 2, 2, "Informatica", 14084, 0, 0, 0)),
-                e.push(new s.default(10, 14091, 2, "Sistemas de Informacion", 3, 2, 0, 2, "Informatica", 14074, 14087, 0, 0)),
-                e.push(new s.default(10, 14092, 2, "Etica para Profesionales en Informatica", 3, 2, 2, 0, "Informatica", 13040, 0, 0, 0)),
+                e.push(new s.default(9, 14088, 1, "Seguridad Informática", 4, 2, 2, 2, "Informatica", 14081, 0, 0, 0)),                
+                e.push(new s.default(9, 14089, 1, "Proyecto de Tesis", 2, 1, 2, 0, "Informatica", 13024, 13029, 13027, 13021, 13023, 13028, 13031, 13040, 13043, 13036, 13039, 13038, 13034, 13046, 13629, 13630, 13631, 13632, 13633,
+                    13634, 13635, 13636, 13637, 13638, 13639, 13640, 13641, 13642, 13643, 13644, 13645, 13646, 14068, 14069, 14070, 14071, 14072, 14073, 14074, 14075, 14076, 14077, 14078, 14079, 14080, 14081, 14082, 14083
+                )),//                            
+                e.push(new s.default(10, 14090, 2, "Tópicos en Tecnologías Inmersivas", 4, 2, 2, 2, "Informatica", 14084, 0, 0, 0)),
+                e.push(new s.default(10, 14091, 2, "Sistemas de Información", 3, 2, 0, 2, "Informatica", 14074, 14087, 0, 0)),
+                e.push(new s.default(10, 14092, 2, "Ética para Profesionales en Informática", 3, 2, 2, 0, "Informatica", 13040, 0, 0, 0)),
                 e.push(new s.default(10, 14093, 2, "Proyecto de Competencia", 2, 0, 2, 2, "Informatica", 0, 0, 0, 0)),
                 e.push(new s.default(10, 14094, 2, "Proyecto Integrador", 4, 2, 4, 0, "Informatica", 13640, 14075, 14079, 14081)),
                 e.push(new s.default(10, 14095, 2, "Tesis", 1, 0, 2, 0, "Informatica", 14089, 0, 0, 0)),
@@ -209,7 +202,7 @@
                 }
             }(i)
     }
-    , function (e, t, a) {
+    , function (e, t, a) {//5
         "use strict";
         function _classCallCheck(e, t) {
             if (!(e instanceof t))
@@ -263,7 +256,7 @@
             }(s)
             , o = function () {
                 //(ciclo, codigoCurso, n, nombreCurso, creditos, horas teoricas, horas pract, horas lab, escuela, requisitos)
-                function Curso(e, t, a, i, s, n, o, r, c, u, l, k, z) {
+                function Curso(e, t, a, i, s, n, o, r, c, req1, req2, req3, req4, req5, req6, req7, req8, req9, req10, req11, req12, req13, req14, req15, req16, req17, req18, req19, req20, req21, req22, req23, req24, req25, req26, req27, req28, req29, req30, req31, req32, req33, req34, req35, req36, req37, req38, req39, req40, req41, req42, req43, req44, req45, req46, req47, req48 ) {
                     _classCallCheck(this, Curso),
                         this.ciclo = e,
                         this.codigo = t,
@@ -271,10 +264,54 @@
                         this.creditos = s,
                         this.escuela = c,
                         this.codGrupoEscuela = -1,               
-                        this.r1 = u,
-                        this.r2 = l,
-                        this.r3 = k,
-                        this.r4 = z,
+                        this.r1 = req1,
+                        this.r2 = req2,
+                        this.r3 = req3,
+                        this.r4 = req4,
+                        this.r5 = req5,
+                        this.r6 = req6,
+                        this.r7 = req7,
+                        this.r8 = req8,
+                        this.r9 = req9,
+                        this.r10 = req10,
+                        this.r11 = req11,
+                        this.r12 = req12,
+                        this.r13 = req13,
+                        this.r14 = req14,
+                        this.r15 = req15,
+                        this.r16 = req16,
+                        this.r17 = req17,
+                        this.r18 = req18,
+                        this.r19 = req19,
+                        this.r20 = req20,
+                        this.r21 = req21,
+                        this.r22 = req22,
+                        this.r23 = req23,
+                        this.r24 = req24,
+                        this.r25 = req25,
+                        this.r26 = req26,
+                        this.r27 = req27,
+                        this.r28 = req28,
+                        this.r29 = req29,
+                        this.r30 = req30,
+                        this.r31 = req31,
+                        this.r32 = req32,
+                        this.r33 = req33,
+                        this.r34 = req34,
+                        this.r35 = req35,
+                        this.r36 = req36,
+                        this.r37 = req37,
+                        this.r38 = req38,
+                        this.r39 = req39,
+                        this.r40 = req40,
+                        this.r41 = req41,
+                        this.r42 = req42,
+                        this.r43 = req43,
+                        this.r44 = req44,
+                        this.r45 = req45,
+                        this.r46 = req46,
+                        this.r47 = req47,
+                        this.r48 = req48,
                         this.ant = [],
                         this.sig = [],
                         this.lisRqs = [],
@@ -289,7 +326,51 @@
                         this.r1 > 0 && this.lisRqs.push(this.r1),
                         this.r2 > 0 && this.lisRqs.push(this.r2),
                         this.r3 > 0 && this.lisRqs.push(this.r3),
-                        this.r4 > 0 && this.lisRqs.push(this.r4)                       
+                        this.r4 > 0 && this.lisRqs.push(this.r4),
+                        this.r5 > 0 && this.lisRqs.push(this.r5),
+                        this.r6 > 0 && this.lisRqs.push(this.r6),
+                        this.r7 > 0 && this.lisRqs.push(this.r7),
+                        this.r8 > 0 && this.lisRqs.push(this.r8),
+                        this.r9 > 0 && this.lisRqs.push(this.r9),
+                        this.r10 > 0 && this.lisRqs.push(this.r10),
+                        this.r11 > 0 && this.lisRqs.push(this.r11),
+                        this.r12 > 0 && this.lisRqs.push(this.r12),
+                        this.r13 > 0 && this.lisRqs.push(this.r13),
+                        this.r14 > 0 && this.lisRqs.push(this.r14),
+                        this.r15 > 0 && this.lisRqs.push(this.r15),
+                        this.r16 > 0 && this.lisRqs.push(this.r16),
+                        this.r17 > 0 && this.lisRqs.push(this.r17),
+                        this.r18 > 0 && this.lisRqs.push(this.r18),
+                        this.r19 > 0 && this.lisRqs.push(this.r19),
+                        this.r20 > 0 && this.lisRqs.push(this.r20),
+                        this.r21 > 0 && this.lisRqs.push(this.r21),
+                        this.r22 > 0 && this.lisRqs.push(this.r22),
+                        this.r23 > 0 && this.lisRqs.push(this.r23),
+                        this.r24 > 0 && this.lisRqs.push(this.r24),
+                        this.r25 > 0 && this.lisRqs.push(this.r25),
+                        this.r26 > 0 && this.lisRqs.push(this.r26),
+                        this.r27 > 0 && this.lisRqs.push(this.r27),
+                        this.r28 > 0 && this.lisRqs.push(this.r28),
+                        this.r29 > 0 && this.lisRqs.push(this.r29),
+                        this.r30 > 0 && this.lisRqs.push(this.r30),
+                        this.r31 > 0 && this.lisRqs.push(this.r31),
+                        this.r32 > 0 && this.lisRqs.push(this.r32),
+                        this.r33 > 0 && this.lisRqs.push(this.r33),
+                        this.r34 > 0 && this.lisRqs.push(this.r34),
+                        this.r35 > 0 && this.lisRqs.push(this.r35),
+                        this.r36 > 0 && this.lisRqs.push(this.r36),
+                        this.r37 > 0 && this.lisRqs.push(this.r37),
+                        this.r38 > 0 && this.lisRqs.push(this.r38),
+                        this.r39 > 0 && this.lisRqs.push(this.r39),
+                        this.r40 > 0 && this.lisRqs.push(this.r40),
+                        this.r41 > 0 && this.lisRqs.push(this.r41),
+                        this.r42 > 0 && this.lisRqs.push(this.r42),
+                        this.r43 > 0 && this.lisRqs.push(this.r43),
+                        this.r44 > 0 && this.lisRqs.push(this.r44),
+                        this.r45 > 0 && this.lisRqs.push(this.r45),
+                        this.r46 > 0 && this.lisRqs.push(this.r46),
+                        this.r47 > 0 && this.lisRqs.push(this.r47),
+                        this.r48 > 0 && this.lisRqs.push(this.r48)                    
                     }
                 }, {
                     key: "incrementarCred",
@@ -306,7 +387,7 @@
             }();
         t.default = o
     }
-    , function (e, t, a) {
+    , function (e, t, a) {//6 muestra los datos de los recuadros que muestran los cursos
         "use strict";
         function item(e) {
             this.curso = e,
@@ -425,8 +506,7 @@
                     } else
                         e.ctrlKey ? (this.seleccionarTodoRqs(),
                             this.setSelected(!0)) : this.setSelected(!this.selected);
-                    (0,
-                        s.default)()
+                    (0, s.default)()
                 }
                     .bind(this),
                     this.li.onmouseover = function () {
@@ -467,7 +547,7 @@
                 })
             }
     }
-    , function (e, t, a) {
+    , function (e, t, a) {//7 funcionalidad de la funcion 3 y 6
         "use strict";
         function ListaItemCursos() {
             this.lista = []
@@ -498,7 +578,7 @@
                     this.lista[t].setSelected(!1)
             }
     }
-    , function (e, t, a) {
+    , function (e, t, a) {//8 funcion para la ventana de ciclo
         "use strict";
         function PanelCiclo(e) {
             var t = document.createElement("fieldset");
@@ -544,7 +624,7 @@
             }
         }
     }
-    , function (e, t, a) {
+    , function (e, t, a) {//9 funcion para la ventana modal
         "use strict";
         function iniModalManual() {
             var e = document.getElementById("modal")
